@@ -23,9 +23,9 @@ public class ParserUtil {
         String[] splittedExpression = expression.split("[,-.+*_'=]");
         List<String> necessaryContent = new ArrayList<>();
         for (String token : splittedExpression) {
-            if (!token.isEmpty() && !ParserUtil.isPositiveNumber(token)) throw new InvalidExpressionException();
-            if (!token.isEmpty() && ParserUtil.isPositiveNumber(token))
-                necessaryContent.add(token);
+            if(token.isEmpty()) continue;
+            if (!ParserUtil.isPositiveNumber(token)) throw new InvalidExpressionException();
+            necessaryContent.add(token);
         }
         return necessaryContent;
     }

@@ -1,13 +1,8 @@
 package tests;
 
 import calculator.ParserUtil;
-import calculator.StringCalculator;
 import org.junit.Test;
 
-import javax.swing.text.html.parser.Parser;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
