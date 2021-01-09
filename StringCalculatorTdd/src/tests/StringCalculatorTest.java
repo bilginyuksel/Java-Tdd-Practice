@@ -66,4 +66,11 @@ public class StringCalculatorTest {
     public void testAdd_MultipleDelimitersValidExpression() {
         assertEquals(calculator.add("3-+5,7..'8''1==10=_+4"), 38);
     }
+
+    @Test
+    public void testAdd_MultipleDelimiters() {
+        assertEquals(calculator.add("-3,5'7==6_33+11"), 65);
+    }
+
+
 }
