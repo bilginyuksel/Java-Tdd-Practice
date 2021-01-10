@@ -36,6 +36,11 @@ public class ParserUtilTest {
     }
 
     @Test
+    public void testParseExpression_2NumbersWithSpaces() {
+        assertEquals(ParserUtil.parseExpression("3, 5  ,"), Arrays.asList("3", "5"));
+    }
+
+    @Test
     public void testParseExpression_2Numbers2Delimiters() {
         String expression = "3,5";
         List<String> expected = Arrays.asList("3", "5");
