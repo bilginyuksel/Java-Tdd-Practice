@@ -5,3 +5,4 @@ Test driven development practices with java programming language. There are diff
 ### Examples:
 
 * [StringCalculatorTdd](./StringCalculatorTdd/README.md)
+* [TheGreetingTdd](./GreetingKataTdd/README.md)
